@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Pertho Admin Panel</title>
+
+		<!-- Foundation framework -->
+			<link rel="stylesheet" href="foundation/stylesheets/foundation.css" />
+		<!-- jquery UI -->
+			<link rel="stylesheet" href="lib/jQueryUI/css/Aristo/Aristo.css" media="all" />
+		<!-- fancybox -->
+			<link rel="stylesheet" href="lib/fancybox/jquery.fancybox-1.3.4.css" media="all" />
+		<!-- plupload -->
+			<link rel="stylesheet" href="lib/plupload/js/jquery.plupload.queue/css/jquery.plupload.queue.css" media="all" />
+		<!-- file manager -->
+			<link rel="stylesheet" href="lib/elfinder/css/elfinder.min.css" media="all" />
+		<!-- chosen (select element extended) -->
+			<link rel="stylesheet" href="lib/chosen/chosen.css" media="all" />
+		<!-- ibuttons -->
+			<link rel="stylesheet" href="lib/ibutton/css/jquery.ibutton.css" media="all" />
+		<!-- tag handler -->
+			<link rel="stylesheet" href="lib/tagHandler/css/jquery.taghandler.css" media="all" />
+		<!-- main styles -->
+			<link rel="stylesheet" href="css/style.css" />
+
+		<!-- Google fonts -->
+			<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' />
+			<link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' />
+
+		<!-- Favicons and the like (avoid using transparent .png) -->
+			<link rel="shortcut icon" href="favicon.ico" />
+			<link rel="apple-touch-icon-precomposed" href="icon.png" />
+
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="foundation/stylesheets/ie.css" />
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body class="ptrn_a grdnt_a mhover_a">
+		<header>
+			<div class="container head_s_a">
+			  <div class="row sepH_b">
+				  <div class="six columns">
+						<div class="row">
+							<div class="five phone-two columns">
+								<div id="logo">
+									<img src="img/logo.png" alt="Pertho Admin" />
+								</div>
+							</div>
+						  <div class="seven phone-two columns"></div>
+						</div>
+					</div>
+					<div class="six columns">
+						<div class="user_box cf">
+							<div class="user_avatar">
+								<img src="img/user_female.png" alt="" />
+							</div>
+							<div class="user_info user_sep">
+								<p class="sepH_a">
+									<strong>Mary Adams</strong>
+								</p>
+								<span>
+									<a href="#" class="sep">Settings</a>
+									<a href="login.html">Log out</a>
+								</span>
+							</div>
+							<div class="ntf_bar user_sep">
+								<a href="#ntf_mail_panel" class="ntf_item" style="background-image: url(img/ico/icSw2/32-Mail.png)">
+									<span class="ntf_tip ntf_tip_red"><span>12</span></span>
+								</a>
+								<a href="#ntf_tickets_panel" class="ntf_item" style="background-image: url(img/ico/icSw2/32-Day-Calendar.png)">
+									<span class="ntf_tip ntf_tip_red"><span>122</span></span>
+								</a>
+								<a href="#ntf_comments_panel" class="ntf_item" style="background-image: url(img/ico/icSw2/32-Speech-Bubble.png)">
+									<span class="ntf_tip ntf_tip_blue"><span>8</span></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="twelve columns">
+						<nav id="smoothmenu_h" class="ddsmoothmenu">
+							<ul class="cf">
+								<li>
+									<a href="javascript:void(0)" class="mb_parent first_el">Dashboard</a>
+									<ul style="display:none">
+										<li><a href="dashboard.html">Regular</a></li>
+										<li><a href="drag_drop.html">Drag &amp; Drop</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="mb_parent">Forms</a>
+									<ul style="display:none">
+										<li><a href="form_elements.html">Form elements</a></li>
+										<li><a href="form_extended.html">Form elements (extended)</a></li>
+										<li><a href="form_validation.html">Form validation</a></li>
+										<li><a href="form_example.html">Form example</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="mb_parent">UI Elements</a>
+									<ul style="display:none">
+										<li><a href="ui_alertbox_btn_ico_tip.html">Alerts, Buttons, Icons, Tooltips</a></li>
+										<li><a href="ui_gallery.html">Gallery</a></li>
+										<li><a href="ui_grid.html">Grid</a></li>
+										<li><a href="ui_pricingtable.html">Pricing Table</a></li>
+										<li><a href="ui_scrollable.html">Scrollable</a></li>
+										<li><a href="search_page.html">Search Page</a></li>
+										<li><a href="ui_sidebar.html">Sidebar</a></li>
+										<li><a href="ui_tabs.html">Tabs / Accordion</a></li>
+										<li><a href="ui_typography.html">Typography</a></li>
+										<li><a href="ui_widgets.html">Widgets</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="mb_parent">Plugins</a>
+									<ul style="display:none">
+										<li><a href="plugin_charts.html">Charts</a></li>
+										<li><a href="plugin_tables.html">Data tables</a></li>
+										<li><a href="plugin_explorer.html">File explorer</a></li>
+										<li><a href="plugin_help.html">Help/Faq</a></li>
+										<li><a href="plugin_dialogs.html">Dialog boxes/Notifications</a></li>
+										<li><a href="plugin_wizard.html">Wizard</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="mb_parent">Navigation</a>
+									<ul style="display:none">
+										<li><a href="nav_sticky.html">Sticky navigation</a></li>
+										<li><a href="nav_sticky_center.html">Sticky navigation (centered)</a></li>
+										<li><a href="nav_sidebar.html">Sidebar navigation</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="mb_parent">Error Pages</a>
+									<ul style="display:none">
+										<li><a href="error_401.html">401</a></li>
+										<li><a href="error_403.html">403</a></li>
+										<li><a href="error_404.html">404</a></li>
+										<li><a href="error_500.html">500</a></li>
+										<li><a href="error_503.html">503</a></li>
+										<li><a href="error_unexpected.html">Unexpected error</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="mb_parent">Sub-levels</a>
+									<ul style="display:none">
+										<li>
+											<a href="#">First level</a>
+											<ul style="display:none">
+												<li>
+													<a href="#">Second level</a>
+													<ul style="display:none">
+														<li><a href="#">Third level</a></li>
+														<li><a href="#">Third level</a></li>
+													</ul>
+												</li>
+												<li><a href="#">Second level</a></li>
+											</ul>
+										</li>
+										<li><a href="#">First level</a></li>
+										<li><a href="#">First level</a></li>
+										<li><a href="#">First level</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="documentation.html" class="mb_parent">Documentation</a>
+								</li>
+							</ul>
+						</nav>
+						<ul id="breadcrumbs" class="cf">
+							<li>You are here:</li>
+							<li><a href="#">Content</a></li>
+							<li><a href="#">Article</a></li>
+							<li><span>Lorem Ipsum&hellip;</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- notifications content -->
+			<div style="display:none">
+				<div id="ntf_tickets_panel" style="display:none">
+					<p class="sticky-title">New Tickets</p>
+					<ul class="sticky-list">
+						<li>
+							<a href="#">Admin should not break if URL&hellip;</a>
+							<p><span class="s_color small">updated 01.04.2012</span></p>
+						</li>
+						<li>
+							<a href="#">Displaying submenus in custom&hellip;</a>
+							<p><span class="s_color small">updated 01.04.2012</span></p>
+						</li>
+						<li>
+							<a href="#">Featured image on post types.</a>
+							<p><span class="s_color small">updated 24.03.2012</span></p>
+						</li>
+						<li>
+							<a href="#">Multiple feed fixes and&hellip;</a>
+							<p><span class="s_color small">updated 22.03.2012</span></p>
+						</li>
+						<li>
+							<a href="#">Automatic line breaks in&hellip;</a>
+							<p><span class="s_color small">updated 18.03.2012</span></p>
+						</li>
+						<li>
+							<a href="#">Wysiwyg bug with shortcodes.</a>
+							<p><span class="s_color small">updated 08.10.2012</span></p>
+						</li>
+					</ul>
+					<a href="#" class="gh_button btn-small">Show all tickets</a>
+				</div>
+				<div id="ntf_comments_panel" style="display:none">
+					<p class="sticky-title">New Comments</p>
+					<ul class="sticky-list">
+						<li>
+							<a href="#">Lorem ipsum dolor sit amet&hellip;</a>
+							<p><span class="s_color small">John Smith on Maiden Castle, Dorset (29.10.2012)</span></p>
+						</li>
+						<li>
+							<a href="#">Lorem ipsum dolor sit&hellip;</a>
+							<p><span class="s_color small">John Smith on Draining and development&hellip; (29.10.2012)</span></p>
+						</li>
+					</ul>
+					<a href="#" class="gh_button btn-small">Show all comments</a>
+				</div>
+				<div id="ntf_mail_panel" style="display:none">
+					<p class="sticky-title">New Messages</p>
+					<ul class="sticky-list">
+						<li>
+							<a href="#">Lorem ipsum dolor sit amet&hellip;</a>
+							<p><span class="s_color small">From John Smith (29.10.2012)</span></p>
+						</li>
+						<li>
+							<a href="#">Lorem ipsum dolor sit&hellip;</a>
+							<p><span class="s_color small">From John Smith (28.10.2012)</span></p>
+						</li>
+					</ul>
+					<a href="#" class="gh_button btn-small">Show all messages</a>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<div class="row">
+				<div class="twelve columns">
+					<div class="box_c">
+						<div class="box_c_heading cf">
+							<div class="box_c_ico"><img src="img/ico/icSw2/16-List.png" alt="" /></div>
+							<p>Extended Form elements</p>
+						</div>
+						<div class="box_c_content form_a">
+							<form action="index.php?page=form_default" class="nice">
+								<div class="formRow">
+									<label for="expand_textarea">Auto-Expanding Textarea</label>
+									<textarea name="expand_textarea" id="expand_textarea" cols="1" rows="1" class="auto_expand expand" style="min-height:64px"></textarea>
+								</div>
+								
+								
+								
+								
+								<div class="formRow">
+									<div class="row">
+										<div class="three columns">
+											<label class="sepH_b">Datepicker</label>
+											<input type="text" class="input-text small" name="datepicker" id="datepicker">
+										</div>
+									  <div class="three columns">
+											<label class="sepH_b">Datepicker & Timepicker</label>
+										    <input type="text" class="input-text small" name="timepicker" id="timepicker">
+									  </div>
+										<div class="six columns">
+											<label class="sepH_b">Inline Datepicker</label>
+											<div id="datepicker_inline"></div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="formRow">
+																		
+									<div class="row">
+										
+											<script>
+												var itemList = [
+													{url: "mailto:laurat@example3.com", title: "Laura Taggart"},
+													{url: "mailto:charlesb@example3.com", title: "Charles Bledsoe"},
+													{url: "mailto:johnd@example1.com", title: "John Doe"},
+													{url: "mailto:kmiller@example1.com", title: "Kate Miller"},
+													{url: "mailto:jamesv@example2.com", title: "James Vandenberg"},
+													{url: "mailto:wnedyp@example1.com", title: "Wendy Proto"},
+													{url: "mailto:ericc@example4.com", title: "Eric Cantrell"},
+													{url: "mailto:yveso@example2.com", title: "Yves Ouellet"}
+												];
+											</script>
+										
+								</div>
+								<div class="formRow">
+									<label class="sepH_b">Rating</label>
+									<div class="row">
+										<div class="three columns">
+											<div id="rating_def"></div>
+											<small>Default rating</small>
+										</div>
+										<div class="three columns">
+											<div id="rating_half"></div>
+											<small>Rating with half star.</small>
+										</div>
+										<div class="three columns">
+											<div class="cf">
+												<div id="rating_cancel" class="left sepV_a"></div>
+												<span class="left small" id="raty_hint"></span>
+											</div>
+											<small>Rating with cancel button and a hint.</small>
+										</div>
+										<div class="three columns">
+											<div id="rating_custom"></div>
+											<small>Custom rating.</small>
+										</div>
+									</div>
+								</div>
+								<div class="formRow">
+									<label class="sepH_b">Masked inputs</label>
+									<div class="row">
+										<div class="three columns">
+											<label for="mask_phone">Phone</label>
+											<input type="text" class="input-text small" id="mask_phone" mask="mask_phone" />
+											<small>(999) 999-9999</small>
+										</div>
+										<div class="three columns">
+											<label for="mask_date">Date</label>
+											<input type="text" class="input-text small" id="mask_date" mask="mask_date" />
+											<small>99/99/9999</small>
+										</div>
+										<div class="three columns">
+											<label for="mask_ssn">SSN</label>
+											<input type="text" class="input-text small" id="mask_ssn" mask="mask_ssn" />
+											<small>999-99-9999</small>
+										</div>
+										<div class="three columns">
+											<label for="mask_product">Product</label>
+											<input type="text" class="input-text small" id="mask_product" mask="mask_product" />
+											<small>a*-999-a999</small>
+										</div>
+									</div>
+								</div>
+								<div class="formRow">
+									<label class="sepH_b">Wysiwg Html Editor (integrated file explorer)</label>
+									<textarea id="ed_html" name="ed_html" rows="10" cols="60" class="tinymce expand">
+This is some example text that you can edit inside the editor.<br/>
+Nam nisi elit, cursus in rhoncus sit amet, pulvinar laoreet leo. Nam sed lectus quam, ut sagittis tellus. Quisque dignissim mauris a augue rutrum tempor. Donec vitae purus nec massa vestibulum ornare sit amet id tellus. Nunc quam mauris, fermentum nec lacinia eget, sollicitudin nec ante. Aliquam molestie volutpat dapibus. Nunc interdum viverra sodales. Morbi laoreet pulvinar gravida. Quisque ut turpis sagittis nunc accumsan vehicula. Duis elementum congue ultrices. Cras faucibus feugiat arcu quis lacinia. In hac habitasse platea dictumst. Pellentesque fermentum magna sit amet tellus varius ullamcorper. Vestibulum at urna augue, eget varius neque. Fusce facilisis venenatis dapibus. Integer non sem at arcu euismod tempor nec sed nisl. Morbi ultricies, mauris ut ultricies adipiscing, felis odio condimentum massa, et luctus est nunc nec eros.
+									</textarea>
+								</div>
+								<div class="formRow">
+									<label class="sepH_b">File upload</label>
+									<div id="uploader">
+										<p>You browser doesn't have Flash, HTML5 or HTML4 support or you are using touch device.</p>
+										<input type="file" name="pl_file" id="pl_file" />
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="container" id="footer">
+			<div class="row">
+				<div class="twelve columns">
+                    Copyright &copy; 2012 tzd-themes.com
+				</div>
+			</div>
+		</footer>
+		<div class="sw_width">
+			<img class="sw_full" title="switch to full width" alt="" src="img/blank.gif" />
+			<img style="display:none" class="sw_fixed" title="switch to fixed width (980px)" alt="" src="img/blank.gif" />
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="lib/jQueryUI/jquery-ui-1.8.18.custom.min.js"></script>
+		<script src="js/s_scripts.js"></script>
+	    
+		
+		
+		
+		<script src="lib/timepicker/jquery-ui-timepicker-addon.js"></script>
+		
+		
+				
+		<script src="js/pertho.js"></script>
+		<script>
+			$(document).ready(function() {
+				//* common functions
+				prth_common.init();
+
+				//* autosize textareas
+				              				//* extended select elements
+			
+				//* datepicker & timepicker
+				prth_dp_tp.init();
+				//* animated progressbar
+			
+			});
+		</script>
+	</body>
+</html>

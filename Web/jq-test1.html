@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+
+    $("#b1").click(function(){
+        $("h2").hide();
+    });
+
+    $("#b2").click(function(){
+        $("p").hide();
+    });
+
+    $("#b3").click(function(){
+        // $("#p1").hide();
+        // $("#p3").hide();
+
+	$(".A").hide();
+    });
+
+
+});
+</script>
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=362215527203473";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<h2>This is a heading</h2>
+
+<div class="fb-like" data-href="http://www.iuj.ac.jp" data-width="300" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+
+<p id="p1" class="A">This is a paragraph.</p>
+
+<p id="p2">This is another paragraph.</p>
+
+<p id="p3" class="A">This is third paragraph.</p>
+
+<button id="b1">Click me</button>
+
+<button id="b2">Click me too</button>
+
+<button id="b3">Click me again</button>
+
+<script>var pfHeaderImgUrl = '';var pfHeaderTagline = '';var pfdisableClickToDel = 0;var pfHideImages = 0;var pfImageDisplayStyle = 'right';var pfDisablePDF = 0;var pfDisableEmail = 0;var pfDisablePrint = 0;var pfCustomCSS = '';var pfBtVersion='1';(function(){var js, pf;pf = document.createElement('script');pf.type = 'text/javascript';if ('https:' === document.location.protocol){js='https://pf-cdn.printfriendly.com/ssl/main.js'}else{js='http://cdn.printfriendly.com/printfriendly.js'}pf.src=js;document.getElementsByTagName('head')[0].appendChild(pf)})();</script><a href="http://www.printfriendly.com" style="color:#6D9F00;text-decoration:none;" class="printfriendly" onclick="window.print();return false;" title="Printer Friendly and PDF"><img style="border:none;-webkit-box-shadow:none;box-shadow:none;" src="http://cdn.printfriendly.com/button-print-grnw20.png" alt="Print Friendly and PDF"/></a>
+
+</body>
+</html>
